@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+  roles:
+    - { role: install_ngnix }
+    - { role: install_git }  
+
